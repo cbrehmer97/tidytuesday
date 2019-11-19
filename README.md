@@ -6,7 +6,7 @@ Welcome to the Tidy Tuesday GitHub repository for Collin Brehmer. This repositor
 
 More information about the project and weekly data sets can be found [here](https://github.com/rfordatascience/tidytuesday).
 
-# About me
+## About me
 
 My name is Collin Brehmer and I am currently a first year masters student in environmental engineering at Colorado State University (B.S. Environmental Science from UW-Madison). Broadly, my research has focused on the exposure, chemical composition, sources, and oxidative potential of fine particulate matter air pollution (PM2.5) in the context of different air quality interventions. The majority of work for my master's thesis will involve similar analyses to assess changes in air quality associated with a residential coal ban in the Beijing region of China. 
 
