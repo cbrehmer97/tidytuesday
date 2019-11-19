@@ -39,16 +39,20 @@ nz_bird %>%
   geom_bar(stat = "identity", position = "fill", width = 0.6) +
   facet_wrap(~ am_pm) +
   coord_polar(theta = "x", start = -0.26)+
-  labs(y = "% of top 3 votes")+
+  labs(y = "% of votes for the top 3 birds")+
   scale_fill_viridis(discrete = TRUE, name = "Bird species") +
-  annotate("text", x = 2, y = .25, label = "25%", hjust = 0.55, vjust = -0.75, angle = -15) +
-  annotate("text", x = 2, y = 0.5, label = "50%", hjust = 1, vjust = -0.75, angle = -15) +
-  annotate("text", x = 2, y = 0.75, label = "75%", hjust = 1.45, vjust = -0.75, angle = -15)+
-  annotate("text", x = 2, y = 1, label = "100%", hjust = 1.45, vjust = -0.75, angle = -15) + 
+  annotate("text", x = 2, y = .25, label = "25%", hjust = 0.55, vjust = -0.75, angle = -15, size = 3.5) +
+  annotate("text", x = 2, y = 0.5, label = "50%", hjust = 1, vjust = -0.75, angle = -15, size = 3.5) +
+  annotate("text", x = 2, y = 0.75, label = "75%", hjust = 1.45, vjust = -0.75, angle = -15, size = 3.5)+
+  annotate("text", x = 2, y = 1, label = "100%", hjust = 1.45, vjust = -0.75, angle = -15, size = 3.5) + 
   theme(axis.ticks = element_blank(),
         panel.grid = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_text(size = 15, color = "black"),
+        axis.text.x = element_text(size = 12, color = "black"),
         axis.title.x = element_blank(),
-        strip.text = element_text(color = "black", size = 15))+
+        strip.text = element_text(color = "black", size = 12),
+        title = element_text(size = 12),
+        legend.position = "bottom")+
   ggtitle("Relative percent of first choice votes for the top 3 birds per hour")
+
+ggsave("19nov19.png", width = 7, height = 5, units = "in", dpi = 300)
