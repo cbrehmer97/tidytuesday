@@ -39,7 +39,7 @@ nz_bird %>%
   geom_bar(stat = "identity", position = "fill", width = 0.6) +
   facet_wrap(~ am_pm) +
   coord_polar(theta = "x", start = -0.26)+
-  labs(y = "% of votes for the top 3 birds")+
+  labs(y = "% of top votes for the top 3 birds")+
   scale_fill_viridis(discrete = TRUE, name = "Bird species") +
   annotate("text", x = 2, y = .25, label = "25%", hjust = 0.55, vjust = -0.75, angle = -15, size = 3.5) +
   annotate("text", x = 2, y = 0.5, label = "50%", hjust = 1, vjust = -0.75, angle = -15, size = 3.5) +
