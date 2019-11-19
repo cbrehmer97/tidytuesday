@@ -1,6 +1,6 @@
-## Tidy Tuesday
+# Tidy Tuesday
 
-# Info
+## Info
 
 Welcome to the tidy
 
