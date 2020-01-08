@@ -35,10 +35,11 @@ ggplot(aes(y = as.factor(half_decade), x = temperature, fill = mean_half_decade)
   geom_density_ridges_gradient(scale = 3)+
   theme_bw()+
   scale_fill_viridis(name = "Mean temp (°C)") +
-  ggtitle("Distribution and mean of the maximum daily temperatures in Australia*")+
+  ggtitle("Distribution and mean of the maximum daily temperatures in Australian cities*")+
   labs(y = "",
        x = 'Temperature (°C)',
-       caption = "*Temperature measurements were recorded at weather stations in Perth, Port Lincoln, Kent Town,\nBrisbane, Sydney, Canberra, and Melbourne") +
+       subtitle = "*Perth, Port Lincoln, Kent Town, Brisbane, Sydney, Canberra, and Melbourne",
+       caption = "Source: Australian Bureau of Meteorology \n@cbrems73 - #TidyTuesday") +
   theme(plot.caption = element_text(hjust = 0))
 
 ggsave("aus_max_temp_trend.png", width = 7.5, height = 6.5, units = "in")
